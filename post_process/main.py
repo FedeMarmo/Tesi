@@ -6,13 +6,14 @@ from calcoli_energetici import rebound_energy
 
 
 #PERCORSO FILE
-percorso_file = r"C:\Users\Federico\Desktop\Uni\Magistrale\Tesi\Energy_Plus\Simulazioni\Prova_PCM_2_DR\1ZoneUncontrolledWithHysteresisPCM2_DR.csv"
+percorso_file = r"C:\Users\Federico\Desktop\Uni\Magistrale\Tesi\Energy_Plus\Simulazioni\Altro\Prove\Prova_PCM_2_DR.csv"
+
 
 #IMPORTA FILE
 df = pd.read_csv(percorso_file, sep=',')
 
 #PERCORSO FILE DI RIFERIMENTO
-percorso_file_rif = r"C:\Users\Federico\Desktop\Uni\Magistrale\Tesi\Energy_Plus\Simulazioni\Prova_PCM_2\1ZoneUncontrolledWithHysteresisPCM2.csv"
+percorso_file_rif = r"C:\Users\Federico\Desktop\Uni\Magistrale\Tesi\Energy_Plus\Simulazioni\Altro\Prove\Prova_PCM_2.csv"
 
 #IMPORTA FILE
 df_rif = pd.read_csv(percorso_file_rif, sep=',')

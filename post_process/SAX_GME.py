@@ -10,7 +10,7 @@ import matplotlib.dates as mdates
 
 
 # PERCORSO FILE
-percorso_file_GME = r"C:\Users\Federico\Desktop\Uni\Magistrale\Tesi\Energy_Plus\Simulazioni\Prezzi_Elettricità_GME\Giu_Lug_Ago_2024.xlsx"
+percorso_file_GME = r"C:\Users\Federico\Desktop\Uni\Magistrale\Tesi\Energy_Plus\Simulazioni\Prezzi_Elettricità_GME\Nov_Dic_2024_Gen_2025.xlsx"
 
 # IMPORTA FILE
 df_GME = pd.read_excel(percorso_file_GME)
@@ -24,9 +24,6 @@ df_GME['Datetime'] = pd.to_datetime(
 df_GME = df_GME.drop(df_GME.columns[:2], axis=1)
 
 
-# =========================================================
-# SPLIT TEMPORALE
-# =========================================================
 
 # =========================================================
 # ESTRAZIONE DATE E TIME DA DATETIME

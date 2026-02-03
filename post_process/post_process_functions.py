@@ -41,7 +41,10 @@ def correzione_struttura(df):
     df = df[['Datetime', 'Hour_index'] + [col for col in df.columns if col not in ['Datetime', 'Hour_index']]]
 
     # Elimina le prime 48 righe
-    df = df.drop(index=df.index[:48]).reset_index(drop=True)
+
+    # NON MI RICORDO PERCHè QUA VENISSERO ELIMINATE LE PRIME 48 RIGHE, ADESSO LA FUNZIONE VIENE UTILIZZATA DA analisi_DSF E FUNZIONA, IN CASO RIMETTI QUESTA RIGA E COPIA LA FUNZIONE SENZA DI ESSA NELLO SCRIPT DELLE DSF
+
+    #df = df.drop(index=df.index[:48]).reset_index(drop=True)
     return df
 
 #------------------------------------------------------------------------------------------------------------
